@@ -201,6 +201,11 @@ class NoteAddUpdateActivity : AppCompatActivity() {
                 note?.let { note ->
                     binding?.edtTitle?.setText(note.title)
                     binding?.edtDescription?.setText(note.description)
+                    /*binding?.edtDescription?.requestFocus() // Request focus on the EditText
+                    binding?.edtDescription?.post {
+                        val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+                        imm.showSoftInput(binding?.edtDescription, InputMethodManager.SHOW_IMPLICIT) // Show the keyboard
+                    }*/
                 }
             }
         } else {

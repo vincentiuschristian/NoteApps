@@ -1,4 +1,4 @@
-package com.example.noteappsroom.ui.main
+package com.example.noteappsroom.adapter
 
 import android.content.Intent
 import android.view.LayoutInflater
@@ -21,6 +21,11 @@ class NoteAdapter : RecyclerView.Adapter<NoteAdapter.NoteViewHolder>() {
         this.listNotes.addAll(listNotes)
         diffResult.dispatchUpdatesTo(this)
     }
+
+/*    fun updateNoteAtPosition(position: Int, note: Note) {
+        listNotes[position] = note
+        notifyItemChanged(position)
+    }*/
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NoteViewHolder {
         val binding = ItemNoteBinding.inflate(LayoutInflater.from(parent.context), parent, false)

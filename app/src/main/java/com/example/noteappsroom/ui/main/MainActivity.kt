@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import com.example.noteappsroom.adapter.NoteAdapter
 import com.example.noteappsroom.databinding.ActivityMainBinding
 import com.example.noteappsroom.ui.insert.NoteAddUpdateActivity
 
