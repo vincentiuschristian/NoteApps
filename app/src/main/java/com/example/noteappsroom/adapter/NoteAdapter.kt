@@ -22,10 +22,10 @@ class NoteAdapter : RecyclerView.Adapter<NoteAdapter.NoteViewHolder>() {
         diffResult.dispatchUpdatesTo(this)
     }
 
-/*    fun updateNoteAtPosition(position: Int, note: Note) {
+    fun updateNoteAtPosition(position: Int, note: Note) {
         listNotes[position] = note
         notifyItemChanged(position)
-    }*/
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NoteViewHolder {
         val binding = ItemNoteBinding.inflate(LayoutInflater.from(parent.context), parent, false)
